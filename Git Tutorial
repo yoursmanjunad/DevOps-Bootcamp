@@ -1,0 +1,142 @@
+This one open source file helps you to understand the Git and it's commands which helps you contribute your services on git.
+In this, we will be learning the topics like -
+* What is GIT?
+* Why we need to use it?
+* How to use it?
+* And basic commands to get started with Git.
+
+Let's get started!
+
+What is GIT?
+GIT is a version control software for developers. Now, the version control refers a mechanism or a process of saving the several versions of a file throughout the developement process.
+Some times, while you are working with a huge project you comit changes in it and it stops working, it can trouble your customers, your co-developers who are developing a particular project. We know that, it is so difficult to rewrite all the code before which you was supposed to commit changes in a project.
+Here, the version controls helps you to save the each version of the code when you commit a change in a project. It can helps you to save a lot of time in development time and also to not to worry of saving all the versions of file manually.
+
+GIT is is just one of the softwares which work on version controls system.
+
+Getting started with GIT:
+
+Follow this link to download GIT -   https://git-scm.com
+
+Basic commands of GIT:
+
+
+1. To create a directory:
+In order to create a new folder or  a directory for a project, you can just use
+-----   mkdir <directory name>
+Ex:     mkdir <opensource> -> It creates a folder named opensource.
+
+2. View all files:
+To view all the directories or files persent in a folder, we can just use
+-----   ls
+It displays all the text files, compiled and directories right in a location.
+
+3. To know your location:
+TO know your location in Terminal, you can just use ccommand called
+-----   pwd
+It gives something as result like /c/Users/imanj/opensource
+
+***
+
+To track all the changes made in the file (code), we just need to create a repository in the directory using git.
+
+***
+4. To track the changes, we just use
+-----   git init
+command to create a folder which stores the version of changes you have commited.
+
+***
+
+This init folder or directory may not be displayed when we use ls command. Because it is a default hidden folder in git.
+
+***
+So, to view this init folder in git, we just use
+
+5.    ls -a
+command displays you something like this -> ./  ../  .git/
+
+6. In order to know what changes have been made in the project, we just give command as
+-----   git status
+It displays message whether you had commited any change or not.
+
+***
+
+Before you give command as git status, we just have to tell the version control that which file among the project need to be tracked it's changes or it's versions
+
+***
+
+7. git add first.txt
+
+This helps you to track versions of a particular file in the project.
+
+To track the changes of an entire folder, then we can just use the command as
+
+----- git  add .
+
+8. To enter data into a text file, we just need to give command as
+
+----- vi <filename>
+Ex:   vi <first.txt>
+
+Whenever you get opened a file, then you just enter the data and use the command as
+-----  :wq , and then enter
+You will be redirected to the git command line.
+
+To display all the data in the file, command as
+
+----- cat <filename>
+Ex: cat <first.txt>
+
+It displays all the text or data in the file.
+
+9. Use the git diff command to see the changes that have been made to a file or project. This command displays the differences between the most recent code commit and the version that is currently in use. Using this command without any further arguments will display changes in all files; using it with additional parameters will just display changes in the file or directory you specify.
+
+For instance, you would use the command git diff file.txt to view the changes made to a file with the name "file.txt."
+
+
+You can also use the git log command, which will display the project's commit history along with a list of the changes made in each commit.
+
+10. Temporary save changes
+
+In order to save the changes you have commited to be temporary in the git, then we can use command called "stash". 
+
+--> git stash 
+
+This command enables you to save the changes you have commmited to be stored temporarily. You can also give a message like
+
+--> git stash [Message] 
+
+The message can be used to describe the changes that were stashed, or to provide context for why the changes were stashed.
+
+We can also create multiple stashes using command 
+
+--> git stash save 
+
+To list all the multiple stash avaliable, we just use the command 
+
+--> git staash list
+
+The "git stash apply" command can be used to restore those modifications to the working directory.
+
+The changes that were cached are applied to the working directory using this command.
+
+You can either commit the changes after they have been made or keep working on them after they have been made.
+
+To apply a specific stash from the list, use the command git stash apply [stash name], and to apply the stash and remove it from the list, use git stash pop [stash name].
+
+Here, The placeholder [stash name] is used to indicate the stash you want to apply, drop, or list.
+
+When you use the git stash save command to create a stash, git gives it a default name like "stash@0," "stash@1," and so on.
+
+These names, which are allocated and automatically produced by git, reflect the order in which the stashes were created.
+
+Instead of [stash name] in the command, you can specify the stash name, such as "stash@0," "stash@1," etc., if you wish to apply, drop, or list a specific stash.
+
+For instance, you would run the command git stash apply stash@1 to apply the stash with the name "stash@1".
+
+
+ *******************************************************************************************************************************************************************************************
+ 
+ 
+ 
+
